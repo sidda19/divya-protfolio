@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        html{
+            font-family:Poppins ;
+        }
+        header{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image: url("https://img.freepik.com/free-photo/flat-lay-workstation-with-copy-space-laptop_23-2148430879.jpg?semt=ais_hybrid&w=740");
+            background-color: #100b00;
+            padding-right: 0px;
+            margin-right: 0px;
+            height: 40vh;
+            background-size: cover;
+        }
+        .navbar{
+            background: white;
+            height: 8vh;
+            top: 0;
+            left: 0;
+            width: 60%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            color: white;
+            margin-top: 10px;
+            border-radius: 30px;
+            border-width: 2px;
+            box-shadow: rgba(255, 255, 255, 0.938);
+
+        }
+        .heading1{
+            color:rgb(198, 66, 18);
+            font-size: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            margin-left: 20px;
+            
+        }
+        
+        .elements{
+            color: black;
+            text-decoration: none;
+            font-weight: 500;
+            margin-right: 15px;
+            transition: color 0.3s ease
+            
+        }
+        .elements:hover{
+            color: rgb(223, 69, 13);
+        }
+        #home{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .heading2{
+
+            color: #e6750c;
+            font-size: 3rem;
+            margin-bottom: 0px;
+            padding-bottom: 0px;
+            text-align: center;
+
+        }
+        
+        .para1{
+            color: whitesmoke;
+            font-size: 22px;
+            font-family: Poppins;
+        }
+        .para2{
+            color: white;
+            font-size: 23px;
+            font-weight: 200px;
+            padding: 10px;
+            margin-left: 10px;
+            font-family: open sans;
+        }
+        .button{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn{
+            background:  #ff9900;
+            height: 6vh;
+            width: 10vw;
+            border-radius: 10px;
+            border-width: 0px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            background-image: linear-gradient(90deg, #FDBB2D 0%, #3A1C71 100%);
+            color: white;
+        }
+        #about{
+            width: 100%;
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            background-color:  #100b00;
+        }
+        .image{
+            display: flex;
+            align-items: row;
+            justify-content: start;
+
+        }
+        .img{
+            height: 40vh;
+            width: 20vw;
+            border-radius: 50%;
+            border-width: 7px;
+            border-color: #ed7606;
+            border-style: solid;
+            margin-top: 15px;
+        }
+        #skills{
+            display: flex;
+            align-items: left;
+            background-color: #070500;
+        }
+        .heading3{
+            color: #f36e02;
+            font-size: 30px;
+        }
+        .list{
+            color: white;
+            font-size: 20px;
+            font-family: open sans;
+            margin-bottom: 10px;
+        }
+        span{
+            color: rgb(215, 151, 55);
+        }
+        #contact{
+            font-size: 30px;
+            display: flex;
+            align-items: left;
+            background-color:#100b00;
+            height: 100vh;
+        }
+        .card3{
+            padding-left: 25px;
+            padding-top: 10px;
+        }
+        .card4{
+            display: flex;
+            align-items: row;
+            justify-content: start;
+            margin: 15px;
+        }
+        .img1{
+            height: 7vh;
+            width: 4vw;
+            border-radius: 50%;
+        }
+        .heading4{
+            font-size: 24px;
+            margin-top: 8px;
+            margin-left: 8px;
+            color: #ea7005;
+        }
+        .heading5{
+            font-size: 30px;
+            color: white;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+        }
+        .card2{
+            padding: 100px;
+        }
+        Footer{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 8vh;
+            font-size: 16px;
+            color: white;
+            background-color: #070500;
+        }
+        #card1{
+            background-color: #070500;
+            height: 100vh;
+        }
+        .card{
+            padding: 100px;
+        }
+        .link{
+            color: whitesmoke;
+            text-decoration: none;
+            font-family: Open sans;
+
+        }
+        .link:hover{
+            color: #f8fc03;
+        }
+    </style>
+</head>
+<body>
+    <div id="card1">
+    <header>
+        <nav class="navbar">
+            <div>
+                <h1 class="heading1">Divya</h1>
+            </div>
+            <div class="nav-links">
+                <div>
+                    <a href="#card1" class="elements">Home</a>
+                    <a href="#about" class="elements">About</a>
+                    <a href="#skills" class="elements" >Skills</a>
+                    <a href="#contact" class="elements">Contact</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <section id="home">
+            <div>
+                <h1 class="heading2">Hi, I am Divya</h1>
+                <p class="para1">Aspiring Web Developer & Designer</p>
+                <div class="button">
+                <button class="btn">View my work</button></div>
+            </div>
+        </section>
+    </div>
+    <main>
+        <section id="about">
+            <div class="image">
+                <img src="image.jpg"
+                class="img"/>
+                <p class="para2">Hello! I'm Divya, an aspiring<br> 
+                    the basics of web design. I enjoy turning ideas <br>
+                    into reality using web developer currently <br>
+                    learning HTML, CSS, and the basics of web design.<br>
+                    I enjoy turning ideas into reality using code <br>
+                    and I love exploring new tools and frameworks<br>to expand my skills. </p>
+            </div>
+        </section>
+        <section id="skills">
+            <div class="card">
+                <h1 class="heading3">Skills</h1>
+                <ul>
+                    <li class="list">Programming Languages : <span> Python, C, My SQL</span></li>
+                    <li class="list">Web technologies : <span> CSS, HTML, Javascript</span></li>
+                    <li class="list">Tools : <span> VS Code, Canva</span></li>
+                    
+                </ul>
+                <h1 class="heading3">Projects</h1>
+                <ul>
+                    <li class="list"> Protfolio : <span><a href=""> Divya protfolio</a></span></li>
+                </ul>
+                <h1 class="heading3">Education</h1>
+                <ul>
+                    <li class="list">College : <span>  IIT Gandhinagar(2024-2028)</span></li>
+                    <li class="list">Course : <span>  Artificial Intelligence</span></li>
+                    <li class="list">School : <span>  Sasi</span></li>
+                </ul>
+                
+            </div>
+        </section>
+        <section id="contact">
+            <div class="card2">
+                <h1 class="heading5">Contact</h1>
+                <div class="card3">
+                    <div class="card4">
+                        <img src="https://static.vecteezy.com/system/resources/previews/022/484/516/non_2x/google-mail-gmail-icon-logo-symbol-free-png.png"
+                        class="img1"/>
+                        <h2 class="heading4 p-3">G-Mail: <a href="" class="link"> siddadivya1905@gmail.com</a></h2>
+                    </div>
+                    <div  class="card4">
+                        <img src="https://cdn-icons-png.flaticon.com/512/4096/4096186.png"
+                        class="img1"/>
+                        <h2 class="heading4">Linkedln: <a href="https://www.linkedin.com/in/divya-sidda-2345b5322?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="link"> Divya Sidda</a></h2>
+                    </div>
+                    <div class="card4">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSbqj9Ii13d6hx5a9kyLnC5A8A96LDSaSZv_w&s.png"
+                        class="img1"/>
+                        <h2 class="heading4">Github: <a href="https://github.com/sidda19" class="link"> sidda19</a></h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <Footer>
+        <p>© 2025 Divya. All Rights Reserved.</p>
+    </Footer>
+</body>
+</html>
