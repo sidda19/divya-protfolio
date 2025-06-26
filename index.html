@@ -110,22 +110,30 @@
             align-items: center;
             background-color:  #100b00;
         }
-        .image{
+        .image {
             display: flex;
-            align-items: row;
-            justify-content: start;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            padding: 20px;
+        }
 
-        }
-        .img{
-            height: 40vh;
-            width: 20vw;
+        .img {
+            max-width: 200px;
+            width: 100%;
+            height: auto;
             border-radius: 50%;
-            border-width: 7px;
-            border-color: #ed7606;
-            border-style: solid;
-            margin-top: 15px;
+            border: 7px solid #ed7606;
         }
+
         #skills{
+            display: flex;
+            align-items: left;
+            background-color: #070500;
+        }
+        #skills_new{
             display: flex;
             align-items: left;
             background-color: #070500;
@@ -180,7 +188,7 @@
         .card2{
             padding: 100px;
         }
-        Footer{
+        footer{
             display: flex;
             align-items: center;
             justify-content: center;
@@ -205,6 +213,47 @@
         .link:hover{
             color: #f8fc03;
         }
+        @media screen and (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                height: auto;
+                width: 90%;
+                text-align: center;
+            }
+
+            .btn {
+                width: 50vw;
+            }
+
+            .heading2 {
+                font-size: 2rem;
+            }
+
+            .para2 {
+                font-size: 16px;
+                padding: 10px;
+            }
+
+            .card, .card2 {
+                padding: 20px;
+            }
+
+            .card4 {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .img {
+                max-width: 150px;
+            }
+
+            .img1 {
+                width: 30px;
+                height: 30px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -229,7 +278,8 @@
                 <h1 class="heading2">Hi, I am Divya</h1>
                 <p class="para1">Aspiring Web Developer & Designer</p>
                 <div class="button">
-                <button class="btn">View my work</button></div>
+                <a href="#skills" class="btn" style="text-align: center; text-decoration: none; padding-top: 5px;"> View my work</a>
+                </div>
             </div>
         </section>
     </div>
@@ -290,9 +340,10 @@
                 </div>
             </div>
         </section>
+        
     </main>
-    <Footer>
+    <footer>
         <p>© 2025 Divya. All Rights Reserved.</p>
-    </Footer>
+    </footer>
 </body>
 </html>
